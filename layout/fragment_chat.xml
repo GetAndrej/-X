@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shkolnik.chatx.ChatFragment"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:scrollbars="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_input"
+            android:layout_weight="1"
+            android:hint="Message"
+            android:imeActionId="@+id/send"
+            android:imeActionLabel="Send"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
